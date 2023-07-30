@@ -10,6 +10,11 @@ import discussion from './discussion.png';
 import bandwidth from './bandwidth.png';
 import storage from './storage.png';
 import www from './www.png';
+import bob from './bob.png';
+import mary from './mary.png';
+import fb from './fb.png';
+import twitter from './twitter.png';
+import insta from './insta.png';
 
 export {
     logo, 
@@ -21,5 +26,7 @@ export {
     discussion,
     bandwidth,
     storage,
-    www
+    www,
+    bob, mary,
+    fb, twitter, insta
 };

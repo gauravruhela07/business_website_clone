@@ -5,19 +5,22 @@ import {logo, tv, laptop, tablet, phone, cross} from '../assets/index.js'
 const Navbar = () => {
 
     const screens = [tv, laptop, tablet, phone];
+
+    const active=0;
+
     return (
         <div className='flex justify-between w-full h-20 items-center bg-[#f2f2f2]'> 
             <img 
                 src={logo}
                 alt="logo"
-                className="w-[123px] h-[40px] object-contain"
+                className="pl-5 w-[123px] h-[40px] object-contain"
             />                            
             <div className="flex">
                 {screens.map((screen, index) => (
                     <img 
                         src={screen}
                         alt={index}
-                        className='flex-1 w-10 h-10 p-1 hover:bg-[#b8d5ef]'
+                        className={`flex-1 w-10 h-10 p-1 ${active===index ? 'bg-[#a6cef0]': 'hover:bg-[#b8d5ef]'} `}
                     />
                 ))}
             </div>   
